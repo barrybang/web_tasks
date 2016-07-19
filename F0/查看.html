@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>用户登录</title>
+		<meta charset="utf-8">
+        <style type="text/css">
+            body{
+            	background-repeat:no-repeat;
+            	background-position: top;
+            	padding-right: 100px;
+            }
+        	.typeList{ 
+        	     font: 16px "微软雅黑";
+        	     line-height: 1.8em;
+        	     border-top:2px dashed #ccc;
+        	     border-bottom: 2px dashed #ccc;
+        	     padding-top:50px;padding-bottom: 30px;
+        	     margin:250px 500px;
+        	     text-align:center;      	    }
+        	.userName,.passWord{
+        		 font-weight: bold;
+        		 color:#A4383A;
+        		         	}
+        	.remember{
+        		font-size: 0.5px;
+        		padding-right: 20px;
+        		color: #CCC;
+        		height: 30px;
+                }
+            
+            
+            .picture{
+            	text-align: center;
+            	padding-left: 100px;
+                }
+            .typeList form .userName,.passWord input{
+            	border-radius: 4px;
+                                }
+            
+        </style>
+	</head>
+	<body background="100736597484ff9272.jpg" no-reapt>
+		<div class="typeList">
+			<form method="pst" action="save.php">
+			    <span class="userName"><label for="username">帐号:</label>
+			    <input type="text" name="username" id="username" value="" class="userName" /></br></span>             <!--输入帐号-->
+			    <span class="passWord"><label for="password">密码:</label>
+			    <input type="password" name="password" id="password" value=""/></span> <!--输入密码-->
+			    <script type="text/javascript">  
+			    function showbutton()
+			    {
+			    	var showbutton=document.getElementById("password");
+			    	if (showbutton.type=="password") 
+			    	{
+			    		showbutton.type="text";
+			    	}
+			    	else
+			        {
+			        	showbutton.type="password";
+			        }
+			    }
+			    </script>
+			    
+			    <span class="showButton"><input type="button" onclick="showbutton()" name="show" style="border:none;background-color:white;color:#CCC;padding-right:5px;height:30px;" value="●show" /></span>&nbsp
+			       
+			    <input type="checkbox" value="1" name="remember" id="remember" />
+			    <label for="remember"><span class="remember">remember</span></label> 
+			    </br>
+			    <!--选择是否记住密码-->
+			    <span class="button"><input type="submit" value="登录" name="login" style="width:80px;height:30px;font-size:5px;color:#748E98;background-color:white;border:2px #CCC dashed;border-radius:5px"> <!--登陆按钮--> 
+			    <input type="submit" value="注册" name="signup" style="width:80px;height:30px;font-size:5px;color:#748E98;background-color:white;border:2px #CCC dashed;border-radius:5px"> <!--注册按钮--></span>
+
+			</form>
+        </div>
+			
+		
+	</body>
+</html>
