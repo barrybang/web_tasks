@@ -11,7 +11,7 @@ body{
         	     padding-top:50px;padding-bottom: 30px;
         	     margin:250px 500px;
         	     text-align:center;
-                 width:50px;      	    }
+                 width:250px;      	    }
         	
         	.userName,.passWord{
         		 
@@ -37,13 +37,13 @@ body{
             .typeList form .userName input{
             	border-radius: 2px;
             	border:1px solid #ccc;
-            	height: 30px;
+            	height: 25px;
                                 }
             
             .typeList form .passWord input{
             	border-radius: 2px;
             	border:1px solid #ccc;
-            	height: 30px;
+            	height: 25px;
                 }
             .typeList form .showButton input{
             	border:none;
