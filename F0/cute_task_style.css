@@ -1,0 +1,65 @@
+body{
+            	background-repeat:no-repeat;
+            	background-position: top;
+            	padding-right: 100px;
+            }
+        	.typeList{ 
+        	     font: 16px "微软雅黑";
+        	     line-height: 1.8em;
+        	     border-top:2px dashed #ccc;
+        	     border-bottom: 2px dashed #ccc;
+        	     padding-top:50px;padding-bottom: 30px;
+        	     margin:250px 500px;
+        	     text-align:center;      	    }
+        	
+        	.userName,.passWord{
+        		 
+        		 font-weight: bold;
+        		 color: #686C6F;
+        		 border:none;
+
+        		         	}
+        	.remember{
+
+        		font-size: 0.5px;
+        		color: #CCC;
+        		width: 40px;
+	            height: 10px;	           
+                }
+           
+            
+            .picture{
+            	text-align: center;
+            	padding-left: 100px;
+                }
+
+            .typeList form .userName input{
+            	border-radius: 2px;
+            	border:1px solid #ccc;
+            	height: 20px;
+                                }
+            
+            .typeList form .passWord input{
+            	border-radius: 2px;
+            	border:1px solid #ccc;
+            	height: 20px;
+                }
+            .typeList form .showButton input{
+            	border:none;
+            	background-color:white;
+            	color:#CCC;
+            	padding-right:5px;
+            	height:30px;
+            }
+            
+            .typeList form .button input{
+                width:80px;
+                height:30px;
+                font-size:5px;
+                color:#748E98;
+                background-color:white;
+                border:2px #CCC dashed;
+                border-radius:5px;
+            }
+
+           
