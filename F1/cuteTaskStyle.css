@@ -1,0 +1,70 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+.container{
+	margin: 200px auto;
+	width: 500px;
+	height: 333px;
+	overflow: hidden;
+	position: relative;
+
+}
+.container .pictures{
+	width: 5000px;
+	position: absolute;
+	list-style: none;
+}
+.container .pictures li{
+	float: left;
+	}
+.container .button{
+	position: absolute;
+	width: 100%;
+	bottom: 5px;
+    text-align: center;
+    font-size: 0px;
+    list-style: none;
+}
+
+.container .button li{
+	cursor:pointer;
+	display: inline-block;    
+	background: 0;
+	border: 1px solid #ccc;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	margin: 0 3px;
+}
+.container .button li.on{
+	background: #6B6A6A;     
+}
+.arrow{
+	height: 53px;
+	line-height: 53px;
+	display: none;         /*先把箭头隐藏之后再用*/
+	width: 40px;
+	text-align: center;
+	font-size: 36px;
+	font-weight: bold;
+	position: absolute;
+	top: 140px;
+	background: rgba(0,0,0,.4);
+	color: #ccc;
+	font-family: "宋体";
+}
+
+.arrow.arrowPrev{
+	left:0px;
+}
+.arrow.arrowNext{
+	right:0px;
+}
+.container:hover .arrow{            /*当把鼠标移到图片上之后 左右滑的箭头才显示 新学到的 觉得很酷*/
+	display: block;
+}
+.arrow:hover{
+	background: rgba(0,0,0,.8);   /*移到箭头上 透明度改变*/
+	cursor: pointer;
+}
