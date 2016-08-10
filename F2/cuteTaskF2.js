@@ -4,10 +4,24 @@ $(document).ready(function(){
     $("label.userName").animate({fontSize:12,left:0,top:0},200);
     $("label.userName").stop().animate({fontSize:12,left:0,top:6},200);
   })
+  $(":text").blur(function(){
+    var usernameArr=$(":text").val();
+    if (usernameArr.length == 0) {
+      $(":text").animate({height:2},200);
+      $("label.userName").stop().animate({fontSize:18,left:5,top:15},200);
+    }
+  })
   $(".passwordBox").click(function(){
     $(":password").animate({height:26},200);
     $("label.passWord").animate({fontSize:12,left:0,top:0},200);
     $("label.passWord").stop().animate({fontSize:12,left:0,top:6},200);
+  })
+  $(":password").blur(function(){
+    var passwordArr=$(":text").val();
+    if (passwordArr.length == 0) {
+      $(":password").animate({height:2},200);
+      $("label.passWord").stop().animate({fontSize:18,left:5,top:15},200);
+    }
   })
   
   $(".box .buttom").click(function(){
@@ -23,12 +37,4 @@ $(document).ready(function(){
       alert("密码应为6~16个字符");
     }
   })
-  /*if(username == 0)
-    {
-      $(".box").not(".usernameBox").click(function(){
-        $(":text").animate({height:2},200);
-        $("label.userName").stop().animate({fontSize:18,left:5,top:15,color:#B04330},200);
-      })
-    }*/
-  
 })
