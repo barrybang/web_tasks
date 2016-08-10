@@ -1,0 +1,71 @@
+*{
+	margin: 0;
+	padding:0;
+	box-sizing:border-box;
+}
+body{
+	background: url(background.jpg);
+	background-repeat: repeat;
+}
+.box{
+	font-family: "微软雅黑";
+	width:500px;
+	height: 300px;
+	margin: 150px auto;
+	border: 2px solid #ccc;
+	padding: 20px 100px;
+	border-radius: 7px;
+	display: block;
+	background-color: rgba(12,50,73,0.75);
+	position: relative;
+}
+h1{
+	text-align: center;
+	color: #F7BE81;
+}
+.usernameBox{
+	position: relative;
+    height: 50px;
+	margin-bottom: 10px;
+	display: block;
+}
+.passwordBox{
+	position: relative;
+	height: 50px;
+	margin-bottom: 20px;
+	display: block;
+}
+#username,#password{
+	position: absolute;
+	background: #ccc;
+	opacity: 0.5;
+	font-size: 15px;
+	border: none;
+	width: 300px;
+	padding-left: 5px;
+	height: 1px; 
+	border-radius: 3px;
+    display: block;
+    bottom: 0px;
+}
+
+input:focus{
+	outline: none;
+}
+label{
+	position: absolute;
+	color: #B04330;
+	cursor: pointer;
+	top: 15px;
+	left: 5px;
+	font-size: 18px;
+}
+input.buttom{
+    color:#F7BE81;
+	margin: 10px 100px;
+	width: 100px;
+	height: 30px;
+	background: none;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+}
