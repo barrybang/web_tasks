@@ -32,9 +32,9 @@ h1{
 	height: 57px;
 	display: block;
 	margin-left: 50px;
-	margin-bottom: 20px;
+	margin-bottom: 18px;
 }
-#username,#password{
+input{
 	position: absolute;
 	background:#FFFFFF;
 	font-size: 15px;
@@ -46,7 +46,36 @@ h1{
     display: block;
     bottom: 0px;
     box-shadow: 0px 4px 3px #3C264F; 
+    /*-webkit-transition: height .4s linear 0s;
+    transition: height .4s linear 0s;*/
 }
+
+@keyframes change {
+	0%{
+		font-size: 15px;
+		left: 10px;
+		top: 20px;
+	}
+	60%{
+		font-size:10px;
+		left:0px;
+		top:0px;
+	}
+	100%{
+		font-size: 10px;
+		left:0px;
+		top:6px;
+	}
+}
+@keyframes inputChange{
+    0%{
+    	height: 3px;
+    }
+    100%{
+    	height: 35px;
+    }
+}
+
 .forget{
 	padding-left: 250px;
 	color:#3C264F;
@@ -56,7 +85,15 @@ h1{
 
 input:focus{
 	outline: none;
+	animation: .5s inputChange ease-out;
+	animation-fill-mode: both;
 }
+
+.labelStart{
+	animation: change .5s ease-out;
+	animation-fill-mode: both;
+}
+
 label{
 	position: absolute;
 	color: #FFFFFF;
@@ -75,4 +112,5 @@ input.buttom{
 	background:#482466;
 	bottom:0px; 
 	border: none;
+	box-shadow: none;
 }
